@@ -1,0 +1,89 @@
+html {
+  height: 100%;
+  width: 100%;
+  background: #ecc19c;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 36px;
+  color: #1e847f;
+  /* Match one of the clock box colors for consistency */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10%;
+}
+
+#hours,
+#minutes,
+#seconds {
+  border-radius: 25px;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+  font-size: 60px;
+  /* Significantly increased font size */
+  color: #ffffff;
+  /* Changed text color for contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Added box shadow */
+  transition: transform 0.2s ease-in-out;
+  /* Added transition for hover effect */
+  font-family: Arial, sans-serif;
+  /* Added font family */
+}
+
+#hours {
+  background: linear-gradient(to right, #3caea3, #1e847f);
+  /* Example gradient background */
+  border: 5px solid #0a5a52;
+  /* Added border and color */
+}
+
+#minutes {
+  background: linear-gradient(to right, #e9b5c8, #d9a5b3);
+  /* Example gradient background */
+  border: 5px solid #b8728b;
+  /* Added border and color */
+}
+
+#seconds {
+  background: linear-gradient(to right, #599ac7, #1978A5);
+  /* Example gradient background */
+  border: 5px solid #105278;
+  /* Added border and color */
+}
+
+#hours:hover,
+#minutes:hover,
+#seconds:hover {
+  transform: scale(1.05);
+  /* Added hover effect */
+  cursor: pointer;
+  /* Added pointer cursor on hover */
+}
+
+.colon {
+  font-size: 60px;
+  /* Same font size as clock digits */
+  color: #ffffff;
+  /* White color for contrast */
+  font-family: Arial, sans-serif;
+  /* Font family */
+  display: flex;
+  align-items: center;
+}
